@@ -7,9 +7,12 @@
   </parent>
   
   <artifactId>employee_data</artifactId>
-  
-  <name>employee_data_access</name>
-  
+ 
+	 <properties>
+	 <maven.compiler.source>12</maven.compiler.source>
+	 <maven.compiler.target>12</maven.compiler.target>
+	 </properties>
+	  
   <dependencies>
   <!-- hibernate dependencies .. this is Hibernate core and HibernateTransactionManager -->
 			  <!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-core -->

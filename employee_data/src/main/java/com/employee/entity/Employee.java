@@ -16,7 +16,6 @@ public class Employee {
 
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
-	
 	@Column(name="employee_id")
 	private int employeeId;
 	
@@ -94,6 +93,12 @@ public class Employee {
 
 	public void setPhoneNumber(String phoneNumber) {
 		this.phoneNumber = phoneNumber;
+	}
+
+	@Override
+	public String toString() {
+		return "Employee [employeeId=" + employeeId + ", firstname=" + firstname + ", lastname=" + lastname
+				+ ", dateOfBirth=" + dateOfBirth + ", email=" + email + ", phoneNumber=" + phoneNumber + "]";
 	}
 	
 }
